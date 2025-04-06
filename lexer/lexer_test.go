@@ -3,11 +3,12 @@ package lexer
 import (
 	"testing"
 
-	"monkey/token"
+	"github.com/spaceship/equlon/token"
 )
 
+// TestNextToken tests the NextToken function.
 func TestNextToken(t *testing.T) {
-    input := `=+(){},;`
+    input := `:==+(){},;`
 
     tests := []struct {
         expectedType    token.TokenType
